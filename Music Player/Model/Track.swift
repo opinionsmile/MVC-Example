@@ -10,9 +10,7 @@ import Foundation
 struct Track {
 
   let trackId: Int
-  let artistName: String
   let trackName: String
-  let artworkUrl: URL?
   let releaseDate: String
   let releaseYear: String
   let previewUrl: URL?
@@ -20,13 +18,10 @@ struct Track {
   let trackViewUrl: URL?
   let trackDuration: String
   let trackPrice: String?
-  let albumName: String?
 
-  init(trackId: Int, artistName: String, trackName: String, artworkUrl: URL?, releaseDate: String, releaseYear: String, previewUrl: URL?, primaryGenreName: String, trackViewUrl: URL?, trackDuration: String, trackPrice: String?, albumName: String?) {
+  init(trackId: Int, trackName: String, releaseDate: String, releaseYear: String, previewUrl: URL?, primaryGenreName: String, trackViewUrl: URL?, trackDuration: String, trackPrice: String?) {
     self.trackId = trackId
-    self.artistName = artistName
     self.trackName = trackName
-    self.artworkUrl = artworkUrl
     self.releaseDate = releaseDate
     self.releaseYear = releaseYear
     self.previewUrl = previewUrl
@@ -34,7 +29,6 @@ struct Track {
     self.trackViewUrl = trackViewUrl
     self.trackDuration = trackDuration
     self.trackPrice = trackPrice
-    self.albumName = albumName
   }
 
 }
@@ -47,8 +41,8 @@ extension Track {
    * - parameters:
    *      -trackResponse: the tracks response array
    */
-  static func getViewModelsWith(_ trackResponse: [TrackResponse]) -> [Track] {
-    return trackResponse.map { getViewModelWith($0) }
+  static func getTracksWith(_ tracksResponse: [TrackResponse]) -> [Track] {
+    return tracksResponse.map { getTrackWith($0) }
   }
 
   /**
@@ -57,8 +51,7 @@ extension Track {
    * - parameters:
    *      -trackResponse: the track response
    */
-  private static func getViewModelWith(_ trackResponse: TrackResponse) -> Track {
-    let artworkUrl = TrackManager.shared.getExtraLargeUrlWith(URL(string: trackResponse.artworkUrl))
+  private static func getTrackWith(_ trackResponse: TrackResponse) -> Track {
     var releaseYear = ""
     var date = ""
     if let releaseDate = Date.getISODateWithString(trackResponse.releaseDate) {
@@ -80,31 +73,31 @@ extension Track {
       trackPrice = "\(price) \(trackResponse.currency)"
     }
 
-    return Track(trackId: trackResponse.trackId, artistName: trackResponse.artistName, trackName: trackResponse.trackName, artworkUrl: artworkUrl, releaseDate: date, releaseYear: releaseYear, previewUrl: previewUrl, primaryGenreName: trackResponse.primaryGenreName, trackViewUrl: trackViewUrl, trackDuration: trackDuration, trackPrice: trackPrice, albumName: trackResponse.albumName)
+    return Track(
+      trackId: trackResponse.trackId,
+      trackName: trackResponse.trackName,
+      releaseDate: date,
+      releaseYear: releaseYear,
+      previewUrl: previewUrl,
+      primaryGenreName: trackResponse.primaryGenreName,
+      trackViewUrl: trackViewUrl,
+      trackDuration: trackDuration,
+      trackPrice: trackPrice
+    )
   }
-
-}
-
-struct TracksResponse: Decodable {
-
-  let resultCount: UInt
-  let results: [TrackResponse]
 
 }
 
 struct TrackResponse: Decodable {
 
-  let artistName: String
   let trackId: Int
   let trackName: String
   let trackViewUrl: String
   let previewUrl: String?
-  let artworkUrl: String
   let releaseDate: String
   let primaryGenreName: String
   let trackPrice: Float?
   let currency: String
   let trackTimeMillis: Int?
-  let albumName: String?
 
 }
