@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84847E0629A7595E006FD15C /* Tracks.json in Resources */ = {isa = PBXBuildFile; fileRef = 84847E0529A7595E006FD15C /* Tracks.json */; };
 		84847E0929A759EE006FD15C /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84847E0829A759EE006FD15C /* Track.swift */; };
 		84847E0E29A75A81006FD15C /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84847E0D29A75A81006FD15C /* TrackManager.swift */; };
 		84847E1229A75A9B006FD15C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84847E0F29A75A9B006FD15C /* String.swift */; };
@@ -15,6 +14,7 @@
 		84847E1429A75A9B006FD15C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84847E1129A75A9B006FD15C /* Date.swift */; };
 		84847E1629A75BE8006FD15C /* AlbumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84847E1529A75BE8006FD15C /* AlbumManager.swift */; };
 		84847E1829A75BF1006FD15C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84847E1729A75BF1006FD15C /* Album.swift */; };
+		84847E1A29A75C9D006FD15C /* Albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 84847E1929A75C9D006FD15C /* Albums.json */; };
 		8497988926BD267D001F684A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497988826BD267D001F684A /* AppDelegate.swift */; };
 		8497988B26BD267D001F684A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497988A26BD267D001F684A /* SceneDelegate.swift */; };
 		8497989226BD268C001F684A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8497989126BD268C001F684A /* Assets.xcassets */; };
@@ -24,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84847E0529A7595E006FD15C /* Tracks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tracks.json; sourceTree = "<group>"; };
 		84847E0829A759EE006FD15C /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		84847E0D29A75A81006FD15C /* TrackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
 		84847E0F29A75A9B006FD15C /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		84847E1129A75A9B006FD15C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		84847E1529A75BE8006FD15C /* AlbumManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
 		84847E1729A75BF1006FD15C /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		84847E1929A75C9D006FD15C /* Albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albums.json; sourceTree = "<group>"; };
 		8497988526BD267D001F684A /* Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8497988826BD267D001F684A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8497988A26BD267D001F684A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		849798D926BD2CE9001F684A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				84847E1929A75C9D006FD15C /* Albums.json */,
 				8497989126BD268C001F684A /* Assets.xcassets */,
-				84847E0529A7595E006FD15C /* Tracks.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 			files = (
 				8497989526BD268C001F684A /* LaunchScreen.storyboard in Resources */,
 				8497989226BD268C001F684A /* Assets.xcassets in Resources */,
-				84847E0629A7595E006FD15C /* Tracks.json in Resources */,
+				84847E1A29A75C9D006FD15C /* Albums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

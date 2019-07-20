@@ -9,7 +9,7 @@ import Foundation
 
 class TrackManager {
 
-  static let shared: TrackManager = TrackManager()
+  static let shared = TrackManager()
 
   func getTrackTimemmssFormatWith(trackTimeMillis: Int?) -> String {
     guard let trackTimeMillis = trackTimeMillis else {
