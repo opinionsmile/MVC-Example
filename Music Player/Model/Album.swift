@@ -28,20 +28,20 @@ struct Album {
 extension Album {
 
   /**
-   * Get the view models (array) from the tracks response array
+   * Get the view models (array) from the albums response array
    *
    * - parameters:
-   *      -trackResponse: the tracks response array
+   *      -albumsResponse: the albums response array
    */
-  static func getAlbumsWith(_ albumsResponse: [AlbumResponse]) -> [Album] {
-    return albumsResponse.map { getAlbumWith($0) }
+  static func getAlbumsWith(_ albumsResponse: AlbumsResponse) -> [Album] {
+    return albumsResponse.results.map { getAlbumWith($0) }
   }
 
   /**
-   * Get the view model (single view model) from the track response
+   * Get the view model (single view model) from the album response
    *
    * - parameters:
-   *      -trackResponse: the track response
+   *      -albumResponse: the album response
    */
   private static func getAlbumWith(_ albumResponse: AlbumResponse) -> Album {
 
@@ -61,7 +61,7 @@ extension Album {
 struct AlbumsResponse: Decodable {
 
   let resultCount: UInt
-  let results: [AlbumsResponse]
+  let results: [AlbumResponse]
 
 }
 
