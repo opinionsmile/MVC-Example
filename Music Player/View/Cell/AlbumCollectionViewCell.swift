@@ -2,7 +2,7 @@
 //  AlbumCollectionViewCell.swift
 //  Music Player
 //
-//  Created by Created by John Lombardi on 7/20/19.
+//  Created by John Lombardi on 7/20/19.
 //
 
 import UIKit
