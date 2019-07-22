@@ -14,12 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     if let windowScene = scene as? UIWindowScene {
-      let albumListVC = AlbumListViewController(nibName: nil, bundle: nil)
-      let navigationController = UINavigationController(rootViewController: albumListVC)
-
       let window = UIWindow(windowScene: windowScene)
-      window.rootViewController = navigationController
-
+      AppCoordinator.shared.start(on: window)
       self.window = window
       window.makeKeyAndVisible()
     }

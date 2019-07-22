@@ -7,7 +7,15 @@
 
 import UIKit
 
+import UIKit
+
+protocol AlbumListViewControllerDelegate: AnyObject {
+  func didSelectAlbum(_ album: Album)
+}
+
 class AlbumListViewController: UIViewController {
+
+  weak var delegate: AlbumListViewControllerDelegate?
 
   // MARK: - Private Variable
 
@@ -100,7 +108,7 @@ extension AlbumListViewController: UICollectionViewDelegateFlowLayout, UICollect
   }
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+    delegate?.didSelectAlbum(albums[indexPath.item])
   }
 }
 

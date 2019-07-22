@@ -1,0 +1,81 @@
+{
+  "resultCount": 18,
+  "results": [
+    {
+      "albumId": 400833614,
+      "albumName": "The Beatles 1962-1966 (The Red Album)",
+      "artistName": "The Beatles",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/7f/ad/8c/7fad8cf2-c332-4794-be5b-aa65c073fece/source/100x100bb.jpg",
+      "tracks": [
+        {
+          "country": "USA",
+          "currency": "USD",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/92/84/24/9284246f-e066-30cb-78cb-f97baeb6bb01/mzaf_5115429602195212627.plus.aac.p.m4a",
+          "primaryGenreName": "Rock",
+          "releaseDate": "1963-11-29T08:00:00Z",
+          "trackId": 400833652,
+          "trackName": "I Want to Hold Your Hand",
+          "trackPrice": 1.29,
+          "trackTimeMillis": 146720,
+          "trackViewUrl": "https://itunes.apple.com/us/album/i-want-to-hold-your-hand/400833614?i=400833652&uo=4"
+        },
+        {
+          "country": "USA",
+          "currency": "USD",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/5e/81/b1/5e81b190-b337-11df-4750-65715be6449e/mzaf_4001501703237280289.plus.aac.p.m4a",
+          "primaryGenreName": "Rock",
+          "releaseDate": "1965-12-03T08:00:00Z",
+          "trackId": 400833684,
+          "trackName": "In My Life",
+          "trackPrice": 1.29,
+          "trackTimeMillis": 147227,
+          "trackViewUrl": "https://itunes.apple.com/us/album/in-my-life/400833614?i=400833684&uo=4"
+        },
+        {
+          "country": "USA",
+          "currency": "USD",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/18/4f/ff/184fff8b-8974-bdd7-13c6-0dde3bb14fbd/mzaf_8923795423295028633.plus.aac.p.m4a",
+          "primaryGenreName": "Rock",
+          "releaseDate": "1965-04-09T08:00:00Z",
+          "trackId": 400833659,
+          "trackName": "Ticket to Ride",
+          "trackPrice": 1.29,
+          "trackTimeMillis": 191160,
+          "trackViewUrl": "https://itunes.apple.com/us/album/ticket-to-ride/400833614?i=400833659&uo=4"
+        }
+      ]
+    },
+    {
+      "albumId": 1053882093,
+      "albumName": "1 (2015 Version)",
+      "artistName": "The Beatles",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/100x100bb.jpg",
+      "tracks": [
+        {
+          "country": "USA",
+          "currency": "USD",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/d6/46/fd/d646fdd7-707f-f39c-8d64-fc06bc459a1a/mzaf_8051670925323901575.plus.aac.p.m4a",
+          "primaryGenreName": "Rock",
+          "releaseDate": "1968-08-26T07:00:00Z",
+          "trackId": 1053882904,
+          "trackName": "Hey Jude (2015 Stereo Mix)",
+          "trackPrice": 1.29,
+          "trackTimeMillis": 425653,
+          "trackViewUrl": "https://itunes.apple.com/us/album/hey-jude-2015-stereo-mix/1053882093?i=1053882904&uo=4"
+        },
+        {
+          "country": "USA",
+          "currency": "USD",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/11/ed/ba/11edba71-45f8-8f0c-0ac6-39a8eba6aa3f/mzaf_1414470875069530706.plus.aac.p.m4a",
+          "primaryGenreName": "Rock",
+          "releaseDate": "1970-03-06T08:00:00Z",
+          "trackId": 1053883545,
+          "trackName": "Let It Be (2015 Stereo Mix)",
+          "trackPrice": 1.29,
+          "trackTimeMillis": 230440,
+          "trackViewUrl": "https://itunes.apple.com/us/album/let-it-be-2015-stereo-mix/1053882093?i=1053883545&uo=4"
+        }
+      ]
+    }
+  ]
+}

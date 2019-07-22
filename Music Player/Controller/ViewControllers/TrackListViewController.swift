@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol TrackListViewControllerDelegate: AnyObject {
+  func didSelectTrack(for album: Album, track: Track)
+}
+
 class TrackListViewController: UIViewController {
+
+  weak var delegate: TrackListViewControllerDelegate?
 
   // MARK: - Private Variable
 
@@ -48,6 +54,7 @@ class TrackListViewController: UIViewController {
   private func setupUI() {
 
     title = album.albumName
+    navigationItem.backButtonTitle = "Back"
     view.addSubview(tableView)
 
     NSLayoutConstraint.activate([
@@ -78,5 +85,7 @@ extension TrackListViewController: UITableViewDataSource, UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+
+    delegate?.didSelectTrack(for: album, track: album.tracks[indexPath.row])
   }
 }
