@@ -8,7 +8,6 @@
 import Foundation
 
 struct Track {
-
   let trackId: Int
   let trackName: String
   let releaseDate: String
@@ -18,19 +17,6 @@ struct Track {
   let trackViewUrl: URL?
   let trackDuration: String
   let trackPrice: String?
-
-  init(trackId: Int, trackName: String, releaseDate: String, releaseYear: String, previewUrl: URL?, primaryGenreName: String, trackViewUrl: URL?, trackDuration: String, trackPrice: String?) {
-    self.trackId = trackId
-    self.trackName = trackName
-    self.releaseDate = releaseDate
-    self.releaseYear = releaseYear
-    self.previewUrl = previewUrl
-    self.primaryGenreName = primaryGenreName
-    self.trackViewUrl = trackViewUrl
-    self.trackDuration = trackDuration
-    self.trackPrice = trackPrice
-  }
-
 }
 
 extension Track {

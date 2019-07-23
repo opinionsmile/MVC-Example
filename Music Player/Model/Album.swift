@@ -8,21 +8,11 @@
 import Foundation
 
 struct Album {
-
   let albumId: Int
   let albumName: String
   let artistName: String
   let artworkUrl: URL?
   let tracks: [Track]
-
-  init(albumId: Int, albumName: String, artistName: String, artworkUrl: URL?, tracks: [Track]) {
-    self.albumId = albumId
-    self.albumName = albumName
-    self.artistName = artistName
-    self.artworkUrl = artworkUrl
-    self.tracks = tracks
-  }
-
 }
 
 extension Album {
